@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <title>Sidebar</title>
   </head>
   <body>
     <nav class="sidebar">
-      <div class="sidebar-button"><i class="bi bi-layout-sidebar"></i></div>
-      <div>
-        <ul>
-          <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-house"></i></span>
-              <span class="text-icon">Home</span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-gear"></i></span>
-              <span class="text-icon">Settings</span>
-            </a>
-          </li>
-        </ul>
+      <header>
+        <div class="image-text">
+          <span class="image"> Sidebar JS </span>
+          <div class="text header-text">
+            <span class="name">Sidebar</span>
+            <span class="name2">test with JS </span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle icon"></i>
+      </header>
+      <div class="manu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </body>
