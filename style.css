@@ -18,14 +18,21 @@
 }
 
 body {
+  display: flex;
   height: 100vh;
   background-color: var(--body-color);
+}
+main {
+  border: 1px solid black;
+  width: 100%;
+  margin: 12px;
 }
 
 .sidebar .text {
   font-size: 16px;
   font-weight: 500;
   color: black;
+  white-space: nowrap;
 }
 .sidebar .image {
   min-width: 60px;
@@ -34,14 +41,22 @@ body {
 }
 
 .sidebar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
-  width: 250px;
+  width: 20%;
   padding: 10px 14px;
 
   background-color: var(--sidebar-color);
+}
+
+.sidebar.close {
+  width: 90px;
+}
+
+.sidebar.close .text {
+  opacity: 0;
 }
 
 .sidebar li {
@@ -54,6 +69,8 @@ body {
   align-items: center;
 }
 .sidebar li .icon {
+  width: 40px;
+  text-align: right;
   font-size: 20px;
 }
 .sidebar li .icon,
